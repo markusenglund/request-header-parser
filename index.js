@@ -6,10 +6,11 @@ var express = require("express"),
 
 app.get("/", function(req, res) {
     
+    res.send("Helloworld!");
     //console.log("ip: " + req.ip)
-    var ua = parser(req.headers["user-agent"]);
+    /*var ua = parser(req.headers["user-agent"]);
     var language = req.headers["accept-language"].split(",")[0];
-    res.json({ipaddress: req.ip, language: language, os:ua.os.name + " " + ua.os.version});
+    res.json({ipaddress: req.ip, language: language, os:ua.os.name + " " + ua.os.version});*/
 })
 
 app.listen(port, function() {
